@@ -37,7 +37,7 @@ def check_website(url):
         # Buscar palabras clave
         if all(keyword in html for keyword in keywords):
             print(f'Palabras clave encontradas en: {url}')
-            with open("links.txt", "a") as file:
+            with open("phishing.txt", "a") as file:
                 file.write(f'{url}\n')
         else:
             print(f'No se encontraron palabras clave en: {url}')
