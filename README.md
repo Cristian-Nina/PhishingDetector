@@ -44,7 +44,7 @@ service = Service(executable_path=r'/ruta/a/tu/geckodriver')
 ```
 
 
-### Ejecución
+## Ejecución
 
 ### 1. Ejecutar app.py
 app.py monitorea la emisión de certificados y guarda los dominios sospechosos en potentialphishing.txt:
@@ -57,11 +57,11 @@ recon.py analiza las páginas listadas en potentialphishing.txt y guarda las URL
 python recon.py
 ```
 
-### Archivos de Salida
+## Archivos de Salida
 - potentialphishing.txt: Contiene los dominios que coinciden con las palabras clave especificadas en app.py.
 - phishing.txt: Contiene las URLs confirmadas como phishing basadas en el análisis de recon.py.
 
-### Notas Adicionales
+## Notas Adicionales
 - Palabras clave: Ajusta las palabras clave en app.py y recon.py según tus necesidades específicas.
 - Rutas: Asegúrate de que las rutas a GeckoDriver y cualquier otro recurso estén correctamente configuradas en el script recon.py.
 
