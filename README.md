@@ -37,8 +37,8 @@ pip install certstream selenium
 ```
 
 ### 3. Instalar Firefox y GeckoDriver
--Firefox: Descarga e instala Firefox desde https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
--GeckoDriver: Descarga GeckoDriver y extrae el archivo. Coloca el ejecutable de GeckoDriver en una ubicación accesible y asegúrate de que esté en tu PATH, o especifica su ruta en el script recon.py:
+- Firefox: Descarga e instala Firefox desde https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
+- GeckoDriver: Descarga GeckoDriver y extrae el archivo. Coloca el ejecutable de GeckoDriver en una ubicación accesible y asegúrate de que esté en tu PATH, o especifica su ruta en el script recon.py:
 ```python
 service = Service(executable_path=r'/ruta/a/tu/geckodriver')
 ```
@@ -58,11 +58,11 @@ python recon.py
 ```
 
 ### Archivos de Salida
--potentialphishing.txt: Contiene los dominios que coinciden con las palabras clave especificadas en app.py.
--phishing.txt: Contiene las URLs confirmadas como phishing basadas en el análisis de recon.py.
+- potentialphishing.txt: Contiene los dominios que coinciden con las palabras clave especificadas en app.py.
+- phishing.txt: Contiene las URLs confirmadas como phishing basadas en el análisis de recon.py.
 
 ### Notas Adicionales
--Palabras clave: Ajusta las palabras clave en app.py y recon.py según tus necesidades específicas.
--Rutas: Asegúrate de que las rutas a GeckoDriver y cualquier otro recurso estén correctamente configuradas en el script recon.py.
+- Palabras clave: Ajusta las palabras clave en app.py y recon.py según tus necesidades específicas.
+- Rutas: Asegúrate de que las rutas a GeckoDriver y cualquier otro recurso estén correctamente configuradas en el script recon.py.
 
 Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en contactarme.
