@@ -27,7 +27,6 @@ Este repositorio contiene dos scripts, `app.py` y `recon.py`, diseñados para de
 Clona el repositorio en tu máquina local:
 ```bash
 git clone https://github.com/Cristian-Nina/PhishingDetector.git
-cd PhishingDetector
 ```
 
 ### 2. Instalar las Dependencias
