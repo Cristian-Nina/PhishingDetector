@@ -30,13 +30,13 @@ git clone https://github.com/Cristian-Nina/PhishingDetector.git
 cd PhishingDetector
 ```
 
-###2. Instalar las Dependencias
+### 2. Instalar las Dependencias
 Instala las dependencias necesarias utilizando pip:
 ```bash
 pip install certstream selenium
 ```
 
-###3. Instalar Firefox y GeckoDriver
+### 3. Instalar Firefox y GeckoDriver
 -Firefox: Descarga e instala Firefox desde https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
 -GeckoDriver: Descarga GeckoDriver y extrae el archivo. Coloca el ejecutable de GeckoDriver en una ubicación accesible y asegúrate de que esté en tu PATH, o especifica su ruta en el script recon.py:
 ```python
@@ -44,24 +44,24 @@ service = Service(executable_path=r'/ruta/a/tu/geckodriver')
 ```
 
 
-###Ejecución
+### Ejecución
 
-###1. Ejecutar app.py
+### 1. Ejecutar app.py
 app.py monitorea la emisión de certificados y guarda los dominios sospechosos en potentialphishing.txt:
 ```bash
 python app.py
 ```
-###2. Ejecutar recon.py
+### 2. Ejecutar recon.py
 recon.py analiza las páginas listadas en potentialphishing.txt y guarda las URLs confirmadas como phishing en phishing.txt:
 ```bash
 python recon.py
 ```
 
-###Archivos de Salida
+### Archivos de Salida
 -potentialphishing.txt: Contiene los dominios que coinciden con las palabras clave especificadas en app.py.
 -phishing.txt: Contiene las URLs confirmadas como phishing basadas en el análisis de recon.py.
 
-###Notas Adicionales
+### Notas Adicionales
 -Palabras clave: Ajusta las palabras clave en app.py y recon.py según tus necesidades específicas.
 -Rutas: Asegúrate de que las rutas a GeckoDriver y cualquier otro recurso estén correctamente configuradas en el script recon.py.
 
